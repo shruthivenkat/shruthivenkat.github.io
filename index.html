@@ -30,6 +30,19 @@
                 <script src="./js/particles.js"></script>
 
 </head><style>
+  /* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
 canvas {
   display: block;
@@ -175,7 +188,7 @@ canvas {
   <div class="brand">
 
     <h1 class="animated fadeInUp">Hello, I'm Shruthi Venkatachalam</h1>
-    <h2 class="animated fadeInUp">I <span class="pulse">&hearts;</span> to code.</h2>
+    <h2 class="animated fadeInUp">I <span class="pulse">&hearts;</span> to code and Design.</h2>
   </div>
 
   <div class="chevron animated fadeInUp">
@@ -192,11 +205,22 @@ canvas {
       <div class="dash animated fadeIn" ></div>
       <p class="concealed visible animated fadeInUp" >
         <p class="padded">
-            I am passionate about product management and developing software applications that improve the lives of those who use them. To channel my pursuits and gain deeper knowledge in the field, I am currently pursuing my Master's in Computer Science from California State University Long Beach, CA. I have an undergraduate degree in Computer Science from PES University where I developed an interest in Data Science, Machine Learning, and Intelligent Systems.<br />
+            I am passionate about product management and in developing software applications that improve the lives of those who use them. To channel my pursuits and gain deeper knowledge in the field, I am currently pursuing my Master's in Computer Science from California State University Long Beach, California. I have an undergraduate degree in Computer Science from PES University where I developed an interest in Data Science, Machine Learning, and Intelligent Systems.<br />
         </p>
       </p>
       <p class="padded">
-          xxx
+          I'm a budding youtuber, who loves to create content, design thumbnails for my vlogs. I've designed event phamplets for Techwomaniya. 
+          <div class="row">
+            <div class="column">
+              <img src="img_snow.jpg" alt="Snow" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="img_forest.jpg" alt="Forest" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="img_mountains.jpg" alt="Mountains" style="width:100%">
+            </div>
+          </div>
       </p>
 
 
@@ -217,7 +241,7 @@ canvas {
          </a>
        </p>
        <br />  
-       You can find details <a class="normal" href="https://www.linkedin.com/in/shruthi-venkatachalam-37bb57150/">here</a>.
+       You can find my details <a class="normal" href="https://www.linkedin.com/in/shruthi-venkatachalam-37bb57150/">here</a>.
 </section>
 
       <section id="interests">
@@ -234,8 +258,8 @@ canvas {
        <h3>Engineering & Development</h3>
         <div class="dash"></div>
           <p class="light">
-            Programming Languages: C/C++, C#, Python, Ruby<br />
-            Web Technologies: Ruby on Rails, Django, React. Js, JavaScript, SQL, CSS, HTML<br />
+            Programming Languages: C, C++, Python, Ruby<br />
+            Web Technologies: Ruby on Rails, Django, React.Js, JavaScript, SQL, CSS, HTML<br />
             Other interests: ML, Deep Learning, NLP</p>
             <div>
           <p>
@@ -247,25 +271,53 @@ canvas {
     </div>
 
     <div class="row">
-      <div class="column col-md-6 concealed visible animated fadeInUp">
+      <div class="concealed visible animated fadeInUp">
         <div class="flaticon">
-          <i class="flaticon-bulb11"></i>
+          <i class="flaticon-codings1"></i>
         </div>
 
-        <h3>Online Courses</h3>
+      <div class="row">
+        <div class="column col-md-6 concealed visible animated fadeInUp">
+          <div class="flaticon">
+            <i class="flaticon-bulb11"></i>
+          </div>
 
-        <div class="dash"></div>
+          <h3>Digital Marketing & Designing</h3>
 
-        <p>
-          I <span class="heart"></span> learning new topics. I have completed Coursera courses in ML, Deep Learning Specialization and Game Theory.
-          I'm currently learning about Quantum Computing and looking forward to adding more interesting topics here.
-        </p>
+          <div class="dash"></div>
 
-        <div class="dash"></div>
+          <p>
+            I <span class="heart"></span> to design. 
+
+            I research on the latest advertising trends, monitor social media and Google Analytics on related topics during event planning. Report on the growth and analytics of campaigns to stakeholders.
+
+          </p>
+
+          <div class="dash"></div>
       </div>
 
+
+       <h3>Engineering & Development</h3>
+        <div class="dash"></div>
+          <p class="light">
+            Programming Languages: C, C++, Python, Ruby<br />
+            Web Technologies: Ruby on Rails, Django, React.Js, JavaScript, SQL, CSS, HTML<br />
+            Other interests: ML, Deep Learning, NLP</p>
+            <div>
+          <p>
+            I've worked with <font color="red"><span class="element"></span></font>
+          </p>
+        </div>
+        <div class="dash"></div>
+      </div>
+    </div>
+
+    
+
+
+    <!-- 
       <div class="column col-md-6 concealed visible animated fadeInUp">
-        <!-- <div class="flaticon">
+       <div class="flaticon">
           <i class="flaticon-globe14"></i>
         </div>
 
@@ -278,15 +330,15 @@ canvas {
         </p>
 
         <div class="dash"></div>
-      </div> -->
-    </div>
+      </div> 
+    </div> -->
 
   </div>
 </section>
 
 <section id="work">
     <div class="container">
-        <h1 class="white">Work Experience</h1>
+        <h1 class="white">Work Experience as a Software Engineer</h1>
 
          <div class="left col-md-8">
             <h3 class="hightlight">Software Development Engineer, DataFoundry</h3>
@@ -567,6 +619,8 @@ particlesJS("particles-js", {
   },
   "retina_detect": true
 });
+
+
 </script>
 
 </body>
